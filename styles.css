@@ -716,10 +716,25 @@ html[lang="ar"] .footer-contact {
 
   .site-header {
     width: calc(100vw - 1.25rem);
-    padding: 0.9rem 1rem;
-    flex-wrap: wrap;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
     top: 0.6rem;
     border-radius: 1rem;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand-mark {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .brand-copy {
+    gap: 0.2rem;
   }
 
   .header-actions {
@@ -737,6 +752,7 @@ html[lang="ar"] .footer-contact {
     align-items: flex-start;
     gap: 0.9rem;
     padding: 1rem 0 0.35rem;
+    grid-column: 1 / -1;
   }
 
   .site-header.menu-open .site-nav {
@@ -752,7 +768,7 @@ html[lang="ar"] .footer-contact {
   }
 
   .hero {
-    padding: 8rem 0 2.2rem;
+    padding: 10.75rem 0 2.2rem;
   }
 
   .hero h1,
@@ -773,12 +789,19 @@ html[lang="ar"] .footer-contact {
   }
 
   .brand-title {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
   }
 
   .hero-shell {
     min-height: auto;
     gap: 1.4rem;
+  }
+
+  .language-pill {
+    height: 3.25rem;
+    padding: 0 1rem;
+    font-size: 0.95rem;
   }
 
   .hero-text {
