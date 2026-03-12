@@ -809,7 +809,10 @@ html[lang="ar"] .footer-contact {
   }
 
   .button {
-    min-width: min(100%, 18rem);
+    min-width: min(100%, 13.5rem);
+    min-height: 3.6rem;
+    padding: 0 1.35rem;
+    font-size: 0.95rem;
   }
 
   .site-footer {
